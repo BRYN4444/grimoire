@@ -300,17 +300,23 @@ pre {
   font-weight: 400;
   font-style: normal; }
 
-dl.tag-list {
+dl.tag-list, dl.schools-list {
   display: inline-block;
   margin: 0; }
-  dl.tag-list dt {
+  dl.tag-list dt, dl.schools-list dt {
     font-weight: bold;
     display: inline-block;
     color: #BDBDBD;
     padding-right: 20px; }
-  dl.tag-list dd {
+  dl.tag-list dd, dl.schools-list dd {
     display: inline;
     padding-right: 20px; }
+
+dl.schools-list dd a {
+  color: #4D96B9;
+  border-radius: 4px; }
+dl.schools-list dd a.selected {
+  color: #781900; }
 
 .post-list-head {
   font-size: 22px;
