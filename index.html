@@ -67,7 +67,7 @@
             });
             if (tags.length == 0) return;
             // Hide all spells where all of the given tags are not present
-            selector = tags.map(function(tag) { return ':not([tags~="' + tag + '"])'; });
+            selector = tags.map(function(tag) { return ':not([data-tags~="' + tag + '"])'; });
             unselected = document.querySelectorAll('.post-list .post-link' + selector.join(''));
             Array.prototype.slice.call(unselected).forEach(function(spell) {
                 spell.parentNode.style.display = 'none';
