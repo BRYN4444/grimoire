@@ -68,7 +68,7 @@
             if (tags.length == 0) return;
             // Hide all spells where all of the given tags are not present
             selector = tags.map(function(tag) { return ':not([school~="' + tag + '"])'; });
-            unselected = document.querySelectorAll('.post-list .post-listing' + selector.join(''));
+            unselected = document.querySelectorAll('.post-list .post-link' + selector.join(''));
             Array.prototype.slice.call(unselected).forEach(function(spell) {
                 spell.parentNode.style.display = 'none';
             });
@@ -239,7 +239,7 @@
         </li>
       
         <li data-tags="bard,sorcerer,warlock,wizard,cantrip,abjuration" data-sources="PHB.218">
-          <a class="post-link" school="" href="/grimoire/spells/blade-ward">Blade Ward</a>
+          <a class="post-link" school="abjuration" href="/grimoire/spells/blade-ward">Blade Ward</a>
         </li>
       
         <li data-tags="sorcerer,warlock,wizard,cantrip,evocation" data-sources="SCAG.142">
